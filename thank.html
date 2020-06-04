@@ -4,10 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Thank You</title>
+  <style>
+    .button {
+      font: bold 11px Arial;
+      text-decoration: none;
+      background-color: #EEEEEE;
+      color: #333333;
+      padding: 7px 12px 7px 12px;;
+      border-top: 1px solid #CCCCCC;
+      border-right: 1px solid #333333;
+      border-bottom: 1px solid #333333;
+      border-left: 1px solid #CCCCCC;
+      border-radius: 25px;
+      display: inline-block;
+      margin-top: 7px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Thank you for signing up</h1>
+  <h1>Thank you for your email!!!</h1>
   <!-- https://stackoverflow.com/questions/2906582/how-to-create-an-html-button-that-acts-like-a-link -->
-  <input type="button" onclick="location.href='https://docs.google.com/spreadsheets/d/1k4Wbbmds0bPOaf6SQutNfiOmb8lYlUWPnj3ggbbO6ac/edit#gid=2062450288';" value="Download Prize">
+  <a class="button" href="https://docs.google.com/spreadsheets/d/1k4Wbbmds0bPOaf6SQutNfiOmb8lYlUWPnj3ggbbO6ac/edit#gid=2062450288" target="_blank">Download Your Gift!!</a>
+  <br>
+  <!-- make a link tag as an inline to give margin top -->
+  <a class="button" onclick="goBack()">Back to Home Page</a>
+  <!-- <input type="button" onclick="location.href='https://docs.google.com/spreadsheets/d/1k4Wbbmds0bPOaf6SQutNfiOmb8lYlUWPnj3ggbbO6ac/edit#gid=2062450288';" value="Download Prize"> -->
+  <script>
+    goBack = () => window.history.back();
+  </script>
 </body>
 </html>
